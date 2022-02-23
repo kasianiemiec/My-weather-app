@@ -1,0 +1,102 @@
+h1 {
+  margin-top: 24px;
+  color: #ff7043;
+}
+
+h2 {
+  font-size: 23px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 3px solid #fda425;
+  border-radius: 50px;
+  background-color: #fff4e5;
+  margin-left: 220px;
+  margin-right: 220px;
+  margin-bottom: 50px;
+  color: #fda425;
+}
+
+h4 {
+  margin-bottom: 50px;
+  color: #fda425;
+}
+
+hr {
+  color: rgb(206, 98, 98);
+  opacity: 0.75;
+}
+a {
+  color: #ff7043;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(206, 98, 98);
+}
+
+.city {
+  padding: 17px;
+  margin-right: 7px;
+  border: 3px solid rgb(206, 98, 98);
+
+  border-radius: 5px;
+
+  border-image: none;
+}
+
+.button {
+  font-size: 19px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #ffa98e;
+  border-color: #ffa98e;
+  border-style: hidden;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.current {
+  background-color: rgb(206, 98, 98);
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.card-body {
+  padding: 30px;
+  padding-top: 40px;
+  padding-bottom: 27px;
+  border: 5px solid #ffa98e;
+}
+
+.col {
+  padding: 10px;
+  border: 2px solid rgb(212, 127, 48);
+  margin: 17px;
+  border-radius: 7px;
+  color: #fda425;
+  background-color: #ffe2d9;
+  font-size: 16px;
+}
+
+.search {
+  margin-top: 10 px;
+}
+
+.temp {
+  color: #ff7043;
+  font-size: 37px;
+  font-weight: 100;
+}
+
+.emoji {
+  font-size: 37px;
+}
