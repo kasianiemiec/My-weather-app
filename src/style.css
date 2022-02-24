@@ -100,3 +100,9 @@ a:hover {
 .emoji {
   font-size: 37px;
 }
+
+.footnote {
+  text-align: left;
+  color: rgb(212, 127, 48);
+  font-size: 13px;
+}
