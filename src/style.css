@@ -1,17 +1,17 @@
 h1 {
-  margin-top: 24px;
+  margin-top: 34px;
   color: #ff7043;
 }
 
 h2 {
   font-size: 23px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 7px;
+  padding-left: 7px;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   border: 3px solid #fda425;
   border-radius: 50px;
-  background-color: #fff4e5;
+  background-color: #ffe2d9;
   margin-left: 220px;
   margin-right: 220px;
   margin-bottom: 50px;
@@ -19,7 +19,7 @@ h2 {
 }
 
 h4 {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   color: #fda425;
 }
 
@@ -105,4 +105,16 @@ a:hover {
   text-align: left;
   color: rgb(212, 127, 48);
   font-size: 13px;
+}
+
+.weather-icon {
+  max-height: 60px;
+  max-width: 60px;
+}
+
+.conditions {
+  position: relative;
+  left: -7px;
+  top: 6px;
+  font-size: 30px;
 }
