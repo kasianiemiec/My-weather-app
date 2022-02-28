@@ -24,12 +24,16 @@ function formatDate(date) {
 
 //1
 function showWeather(response) {
+  console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   celsiusTemperature = response.data.main.temp;
   document.querySelector("#temperature").innerHTML =
     Math.round(celsiusTemperature);
   document.querySelector("#conditions").innerHTML =
     response.data.weather[0].main;
+  document.querySelector("#wind-speed").innerHTML = Math.round(
+    response.data.wind.speed
+  );
   document
     .querySelector("#icon")
     .setAttribute(
