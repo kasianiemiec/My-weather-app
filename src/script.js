@@ -22,9 +22,27 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
-//1
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+              <div class="col-2">
+                ${day} <br />17°C
+                <div class="emoji">☀</div>
+              </div>
+            `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showWeather(response) {
-  console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   celsiusTemperature = response.data.main.temp;
   document.querySelector("#temperature").innerHTML =
@@ -34,6 +52,7 @@ function showWeather(response) {
   document.querySelector("#wind-speed").innerHTML = Math.round(
     response.data.wind.speed
   );
+
   document
     .querySelector("#icon")
     .setAttribute(
@@ -91,6 +110,8 @@ dateElement.innerHTML = formatDate(date);
 
 let celsiusTemperature = null;
 
+displayForecast();
+
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
@@ -100,4 +121,4 @@ celsiusLink.addEventListener("click", convertToCelsius);
 let currentLocationButton = document.querySelector("#current");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-search("Rzeszow");
+search("Athens");
