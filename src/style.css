@@ -79,12 +79,10 @@ a:hover {
 
 .weather-forecast {
   padding: 10px;
-  border: 2px solid rgb(212, 127, 48);
-  margin: 17px;
-  border-radius: 7px;
+
   color: #fda425;
-  background-color: #ffe2d9;
-  font-size: 16px;
+
+  font-size: 18px;
 }
 
 .search {
@@ -117,4 +115,15 @@ a:hover {
   left: -3px;
   top: 6px;
   font-size: 30px;
+}
+
+.col-2 {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  border: 2px solid rgb(212, 127, 48);
+  border-radius: 7px;
+  background-color: #ffe2d9;
+  margin: 5px;
+  width: 14.666667%;
 }
