@@ -127,3 +127,7 @@ a:hover {
   margin: 5px;
   width: 14.666667%;
 }
+
+.row {
+  justify-content: space-between;
+}
